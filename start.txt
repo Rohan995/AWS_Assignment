@@ -1,0 +1,5 @@
+client1=boto3.client('events')
+    response = client1.put_rule(
+        ScheduleExpression='cron(0 %s ? * MON-FRI *)' %(start[0]),
+    )
+   
